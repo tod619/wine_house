@@ -35,3 +35,29 @@ section {
   height: inherit;
 }
 /* End: Global Styles */
+
+/* Start: Section-1 */
+.section-1-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(images/section-1-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.section-1-heading-wrapper {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-1-heading {
+  font-size: 10rem;
+  font-weight: 300;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  border-bottom: 0.2rem solid #d50000;
+  text-align: right;
+  user-select: none;
+}
+/* End: Section-1 */
