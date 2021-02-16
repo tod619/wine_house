@@ -13,6 +13,30 @@ html {
   font-size: 62.5%;
 }
 
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.section-5 {
+  z-index: 50;
+}
+
+.section-wrapper {
+  width: inherit;
+  height: inherit;
+}
+/* End: Global Styles */
+
 /* Start: Navbar */
 .navbar {
   position: fixed;
@@ -104,29 +128,37 @@ html {
 }
 /* End: Navigation-btns */
 
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
+/* Start: Progress Bar */
+.progress-wrapper {
+  position: fixed;
+  z-index: 100;
+  bottom: 2rem;
+  left: 3rem;
 }
 
-section {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
+.progress {
+  margin: 1rem 0;
+  text-align: center;
 }
 
-.section-5 {
-  z-index: 50;
+.progress h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
 }
 
-.section-wrapper {
-  width: inherit;
-  height: inherit;
+.circle-wrapper {
+  display: flex;
 }
-/* End: Global Styles */
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  border: 0.1rem solid #fff;
+  border-radius: 50%;
+  margin: 0 0.3rem;
+}
+/* End: Progress Bar */
 
 /* Start: Section-1 */
 .section-1-wrapper {
