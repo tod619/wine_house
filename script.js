@@ -1,9 +1,17 @@
-// Wheel through website pages
+
 let counter1 = 0;
 let counter2 = 1;
 
 const sections = document.querySelectorAll("section");
 
+const progress = document.querySelector(".progress h2")
+
+// Make page progress counter work
+const progressCounter = () => {
+    progress.textContent = `${counter2}/${sections.length}`
+}
+
+// Wheel through website pages
 window.addEventListener("wheel", (e) => {
     const deltaY = e.deltaY > 0;
     if(deltaY) {
@@ -21,6 +29,7 @@ window.addEventListener("wheel", (e) => {
 
         counter1 = 0;
         counter2 = 1;
+        progressCounter()
         return;
     }
 
@@ -33,7 +42,10 @@ window.addEventListener("wheel", (e) => {
         })
         counter1 = 4;
         counter2 = 5;
+        progressCounter()
     }
+
+    progressCounter()
 
     document.querySelector(`.section-${deltaY ? counter1: counter2}`).style.left = `${deltaY ?"-100vw" : "0"}`;
 
