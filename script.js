@@ -4,11 +4,22 @@ let counter2 = 1;
 
 const sections = document.querySelectorAll("section");
 
-const progress = document.querySelector(".progress h2")
+const progress = document.querySelector(".progress h2");
+
+const circles = document.querySelectorAll(".circle");
 
 // Make page progress counter work
 const progressCounter = () => {
-    progress.textContent = `${counter2}/${sections.length}`
+    // Page counter h2
+    progress.textContent = `${counter2}/${sections.length}`;
+
+    // Progress bar circles
+    Array.from(circles).forEach((circle) => {
+        circle.style.backgroundColor = "transparent";
+    });
+
+    document.querySelector(`.circle-${counter2}`).style.backgroundColor = "#ddd";
+
 }
 
 // Wheel through website pages
