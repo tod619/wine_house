@@ -59,8 +59,17 @@ window.addEventListener("wheel", (e) => {
     progressCounter()
 
     document.querySelector(`.section-${deltaY ? counter1: counter2}`).style.left = `${deltaY ?"-100vw" : "0"}`;
-
-    console.log(counter1,counter2)
-
-
 });
+
+// add functionality to left/righ navigation btns
+document.querySelector(".left-btn").addEventListener("click", () => {
+    counter1 --;
+    counter2 --;
+    document.querySelector(`.section-${counter2}`).style.left = "0"
+})
+
+document.querySelector(".right-btn").addEventListener("click", () => {
+    counter1++;
+    counter2++;
+    document.querySelector(`.section-${counter1}`).style.left = "-100vw"
+})
