@@ -25,6 +25,8 @@ section {
   height: 100%;
   position: absolute;
   left: 0;
+  overflow: hidden;
+  transition: left 1.5s;
 }
 
 .section-wrapper {
