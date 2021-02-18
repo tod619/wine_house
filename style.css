@@ -388,4 +388,19 @@ section {
     margin: 0 12rem;
   }
 }
+
+@media (max-width: 1300px) {
+  .sale-bag {
+    width: 30rem;
+  }
+
+  .wine-bottle {
+    width: 60rem;
+  }
+
+  .footer-img {
+    width: 35rem;
+    margin: 0 10rem;
+  }
+}
 /* End: Media queries */
