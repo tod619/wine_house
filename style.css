@@ -372,3 +372,20 @@ section {
   letter-spacing: 0.2rem;
 }
 /* End: Section-5 */
+
+/* Start: Media Queries */
+@media (max-width: 1600px) {
+  .sale-bag {
+    width: 35rem;
+  }
+
+  .wine-bottle {
+    width: 65rem;
+  }
+
+  .footer-img {
+    width: 45rem;
+    margin: 0 12rem;
+  }
+}
+/* End: Media queries */
