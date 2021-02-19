@@ -465,6 +465,18 @@ section {
     background-color: #d50000;
   }
 
+  .menu-line-1 {
+    transform: rotate(40deg) translate(0.5rem, 1rem);
+  }
+
+  .menu-line-2 {
+    transform: translate(-0.2rem, 2rem);
+  }
+
+  .menu-line-3 {
+    transform: rotate(-40deg) translate(0.5rem, -1rem);
+  }
+
   .nav-list {
     position: absolute;
     top: 5rem;
