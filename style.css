@@ -541,4 +541,45 @@ section {
     margin: 2rem auto;
   }
 }
+
+@media (max-width: 800px) {
+  .left-btn {
+    left: 2rem;
+  }
+
+  .right-btn {
+    right: 2rem;
+  }
+
+  .section-1-heading {
+    font-size: 6rem;
+  }
+
+  .sale-bag {
+    width: 20rem;
+  }
+
+  .wine-bottle {
+    width: 40rem;
+  }
+
+  .section-3-heading {
+    font-size: 11rem;
+    opacity: 0.7;
+  }
+
+  .frame-img {
+    width: 60rem;
+  }
+
+  .new-wines-img {
+    width: 45rem;
+  }
+
+  .progress-wrapper {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 /* End: Media queries */
