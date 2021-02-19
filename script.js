@@ -9,6 +9,8 @@ const progress = document.querySelector(".progress h2");
 
 const circles = document.querySelectorAll(".circle");
 
+const menu = document.querySelector(".menu");
+
 // Make page progress counter work
 const progressCounter = () => {
     // Page counter h2
@@ -93,3 +95,8 @@ document.querySelector('.grapes-img').addEventListener('mouseover', () => {
 document.querySelector('.grapes-img').addEventListener('mouseout', () => {
     document.querySelector('.section-3-wrapper').style.opacity = "1";
 })
+
+// Hide/show navigation menu on click on smaller screens
+menu.addEventListener("click", () => {
+    document.querySelector(".navbar").classList.toggle("change");
+});
